@@ -25,4 +25,9 @@ public class DipendenteServiceImpl implements DipendenteService {
     public List<Dipendente> getDipendete(int id) {
         return dipendenteDAO.getDipendente(id);
     }
+
+    @Override
+    public void setDipendente(Dipendente dipendente) {
+        dipendenteDAO.setDipendente(dipendente);
+    }
 }

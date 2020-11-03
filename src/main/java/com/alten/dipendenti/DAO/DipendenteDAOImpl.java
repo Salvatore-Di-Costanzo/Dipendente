@@ -39,4 +39,11 @@ public class DipendenteDAOImpl implements DipendenteDAO {
 
         return theQuery.getResultList();
     }
+
+    @Override
+    public void setDipendente(Dipendente user) {
+        Session currentSession = entityManager.unwrap(Session.class);
+
+        currentSession.save(user);
+    }
 }

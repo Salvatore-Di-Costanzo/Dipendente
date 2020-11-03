@@ -12,5 +12,7 @@ public interface DipendenteDAO {
 
     public List<Dipendente>  getDipendente(int id);
 
+    public void setDipendente(Dipendente user);
+
 
 }

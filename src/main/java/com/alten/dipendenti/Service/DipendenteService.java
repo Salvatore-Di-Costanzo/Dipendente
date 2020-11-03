@@ -10,4 +10,6 @@ public interface DipendenteService {
 
     public List<Dipendente> getDipendete(int id);
 
+    public void setDipendente(Dipendente dipendente);
+
 }
